@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "mds_array_manipulation"
+version = "0.1.0"
+description = "It will do array manipulations functions like Searching, Sorting, Sorting, Min/Max value."
+authors = ["Kittipong Wongwipasamitkun, Sean Mckay, Yan Zeng, Aishwarya Nadimpally"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
