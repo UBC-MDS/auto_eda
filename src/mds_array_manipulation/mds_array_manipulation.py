@@ -13,7 +13,7 @@ def search_array(arr, elem):
     Examples
     --------
     >>> import numpy as np
-    >>> from mds_array_manipulation import search_array
+    >>> from mds_array_manipulation.mds_array_manipulation import search_array
     >>> arr = np.array([20, 10, 20, 30, 50, 90, 60])
     >>> search_array(arr, 50)
     4
