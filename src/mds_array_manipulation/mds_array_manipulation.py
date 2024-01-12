@@ -56,7 +56,6 @@ def sort_array(arr):
     # TODO: actual code
     pass
 
-
 def count_nonzero_elements(arr):
     """
     Count the number of non zero elements in an array
@@ -79,10 +78,10 @@ def count_nonzero_elements(arr):
     >>> import numpy as np
     >>> from mds_array_manipulation import mds_array_manipulation as am
     >>> arr = np.array([0, 1, 2])
-    >>> count(arr)
+    >>> am.count_nonzero_elements(arr)
     {'Total Non-Zero Elements in Array': 2}
     >>> arr2d = np.array([[0, 1, 2], [3, 0, 5], [0, 7, 8]])
-    >>> count(arr2d)
+    >>> am.count_nonzero_elements(arr2d)
     {'Total Non-Zero Elements in Array': 6, 'Non-Zero Elements in Rows': array([2, 2, 2]), 'Non-Zero Elements in Columns': array([1, 2, 3])}
     """
     # TODO: actual code
