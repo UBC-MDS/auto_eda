@@ -30,7 +30,7 @@ Example usage:
 >>> sort_array(arr)
     array([10, 20, 30, 40, 50, 60, 90])
 >>> count_nonzero_elements(arr)
-    7
+    {'Total Non-Zero Elements in Array': 7}
 ```
 
 ## Contributing
