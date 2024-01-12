@@ -1,7 +1,15 @@
 # mds_array_manipulation
 
-It will do array manipulations functions like Searching, Sorting, Sorting, Min/Max value.
+The package is intended to do Array manipulation like Searching, Sorting and finding the Min/Max value in a Numpy array. 
 
+- sort_array: Takes a numpy array of integers or strings and returns the array in sorted order
+
+- search_array: Searches for and returns the index of a specified element in a numpy array, if it exists
+
+- argmax: Returns the index of the max element in the array
+
+- count_nonzero_elements: Count the number of non zero elements in an array
+  
 ## Installation
 
 ```bash
