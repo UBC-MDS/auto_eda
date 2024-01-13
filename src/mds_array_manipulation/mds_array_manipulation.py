@@ -1,72 +1,29 @@
-def argmax(arr, axis=None):
+def search_array(arr, elem):
     """
-    Returns the indices of the maximum values along an axis from given array.
-
+    Search for elem in a numpy array.
     Parameters
     ----------
     arr : numpy.array
-        Input array.
-    axis : int, optional
-        Axis along which to operate. By default, flattened input is used.
-
+        The numpy array to search
+    elem : object to search for in the array
     Returns
     -------
-    indices : int or tuple of ints
-        Indices of the maximum values along the specified axis.
-
-    Notes
-    -----
-    If there are multiple occurrences of the maximum values, the indices
-    corresponding to the first occurrence are returned.
-
+    int
+        Index of the first occurence of the element in the array, -1 if not found
     Examples
     --------
-    >>> a = np.arange(6).reshape(2,3)
-    >>> a
-    array([[0, 1, 2],
-           [3, 4, 5]])
-    >>> argmax(a)
-    5
-    >>> argmax(a, axis=0)
-    array([1, 1, 1])
-    >>> argmax(a, axis=1)
-    array([2, 2])
-
-    >>> b = np.arange(6)
-    >>> b[1] = 5
-    >>> b
-    array([0, 5, 2, 3, 4, 5])
-    >>> argmax(b)  # Only the first occurrence is returned.
-    1
+    >>> import numpy as np
+    >>> from mds_array_manipulation.mds_array_manipulation import search_array
+    >>> arr = np.array([20, 10, 20, 30, 50, 90, 60])
+    >>> search_array(arr, 50)
+    4
+    >>> search_array(arr, 100)
+    -1
+    >>> search_array(arr, 20)
+    0
     """
-    array = np.array(arr)  # Convert input to a NumPy array, in case of input array is not numpy array 
-    if axis is None:
-        # Flatten the array if no axis is specified
-        flattened_array = array.flatten()
-        max_value = None
-        max_index = None
-        for i, value in enumerate(flattened_array):
-            if max_value is None or value > max_value:
-                max_value = value
-                max_index = i
-        return max_index
-    else:
-        # Find the maximum along the specified axis
-        max_values = [None] * array.shape[axis]
-        max_indices = [None] * array.shape[axis]
-        if axis == 0:
-            for i in range(array.shape[axis]):
-                for j in range(array.shape[1]):
-                    if max_values[i] is None or array[i, j] > max_values[i]:
-                        max_values[i] = array[i, j]
-                        max_indices[i] = j
-        elif axis == 1:
-            for j in range(array.shape[axis]):
-                for i in range(array.shape[0]):
-                    if max_values[j] is None or array[i, j] > max_values[j]:
-                        max_values[j] = array[i, j]
-                        max_indices[j] = i
-        return max_indices
+    # TODO: actual code
+    pass
 
 
 def sort_array(arr):
@@ -98,3 +55,82 @@ def sort_array(arr):
     """
     # TODO: actual code
     pass
+
+def count_nonzero_elements(arr):
+    """
+    Count the number of non zero elements in an array
+    Parameters
+    ----------
+    arr : numpy.array
+        The Input array of any dimension (1D, 2D or 3D)
+    Returns
+    -------
+    dict : A dictionary containing information about non-zero elements.Below are the keys in the dictionary
+      - For 1D array: {'Total Non-Zero Elements in Array': total_nonzero}
+      - For 2D or 3D array:
+        {
+          'Non-Zero Elements in Rows': row_counts,
+          'Non-Zero Elements in Columns': col_counts,
+          'Total Non-Zero Elements in Array': total_nonzero
+        }
+    Examples
+    --------
+    >>> import numpy as np
+    >>> from mds_array_manipulation import mds_array_manipulation as am
+    >>> arr = np.array([0, 1, 2])
+    >>> am.count_nonzero_elements(arr)
+    {'Total Non-Zero Elements in Array': 2}
+    >>> arr2d = np.array([[0, 1, 2], [3, 0, 5], [0, 7, 8]])
+    >>> am.count_nonzero_elements(arr2d)
+        {'Total Non-Zero Elements in Array': 6, 'Non-Zero Elements in Rows': array([2, 2, 2]), 'Non-Zero Elements in Columns': array([1, 2, 3])}
+    """
+    # TODO: actual code
+    pass
+
+
+def argmax(arr, axis=None):
+    """
+    Returns the indices of the maximum values along an axis from given array.
+
+    Parameters
+    ----------
+    arr : numpy.array
+        Input array.
+    axis : int, optional
+        Axis along which to operate. By default, flattened input is used.
+
+    Returns
+    -------
+    indices : int or tuple of ints
+        Indices of the maximum values along the specified axis.
+
+    Notes
+    -----
+    If there are multiple occurrences of the maximum values, the indices
+    corresponding to the first occurrence are returned.
+
+    Examples
+    --------
+    >>> import numpy as np
+    >>> from mds_array_manipulation.mds_array_manipulation import argmax
+    >>> a = np.arange(6).reshape(2,3)
+    >>> a
+    array([[0, 1, 2],
+           [3, 4, 5]])
+    >>> argmax(a)
+    5
+    >>> argmax(a, axis=0)
+    array([1, 1, 1])
+    >>> argmax(a, axis=1)
+    array([2, 2])
+
+    >>> b = np.arange(6)
+    >>> b[1] = 5
+    >>> b
+    array([0, 5, 2, 3, 4, 5])
+    >>> argmax(b)  # Only the first occurrence is returned.
+    1
+    """
+    # TODO: actual code
+    pass
+
