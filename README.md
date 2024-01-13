@@ -12,6 +12,7 @@ This is a package developed for the group-17 project for the UBC MDS DSCI 524 (C
 - count_nonzero_elements: Count the number of non zero elements in an array
 
 The package aims to recreate some of the basic array operations available in the [numpy package](https://github.com/numpy/numpy)
+
   
 ## Installation
 
@@ -47,6 +48,13 @@ Example usage:
 ## Contributing
 
 Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## Contributors
+
+* Sean McKay - @sean-m-mckay
+* Kittipong Wongwipasamitkun (Jo) - @jokittipong
+* Yan Zeng - @Owl64901
+* Aishwarya Nadimpally - @Aishwarya120111
 
 ## License
 
