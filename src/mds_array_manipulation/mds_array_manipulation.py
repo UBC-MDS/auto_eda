@@ -1,15 +1,18 @@
 def search_array(arr, elem):
     """
     Search for elem in a numpy array.
+    
     Parameters
     ----------
     arr : numpy.array
         The numpy array to search
     elem : object to search for in the array
+    
     Returns
     -------
     int
         Index of the first occurence of the element in the array, -1 if not found
+        
     Examples
     --------
     >>> import numpy as np
@@ -56,13 +59,16 @@ def sort_array(arr):
     # TODO: actual code
     pass
 
+
 def count_nonzero_elements(arr):
     """
-    Count the number of non zero elements in an array
+    Count the number of non zero elements in an array.
+    
     Parameters
     ----------
     arr : numpy.array
         The Input array of any dimension (1D, 2D or 3D)
+        
     Returns
     -------
     dict : A dictionary containing information about non-zero elements.Below are the keys in the dictionary
@@ -73,6 +79,7 @@ def count_nonzero_elements(arr):
           'Non-Zero Elements in Columns': col_counts,
           'Total Non-Zero Elements in Array': total_nonzero
         }
+        
     Examples
     --------
     >>> import numpy as np
