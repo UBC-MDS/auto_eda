@@ -22,6 +22,10 @@ def one_d_float_array():
     return np.array([1.0,5.1,3.14,9.62,18.88,24.01,0.0,1.5])
 
 @pytest.fixture
+def one_d_float_tol_array():
+    return np.array([0.0, 1e-14,1e-15,1e-16])
+
+@pytest.fixture
 def one_d_neg_array():
     return np.array([1,5,-3,9,-18,24,0,-1])
 
