@@ -25,8 +25,12 @@ def search_array(arr, elem):
     >>> search_array(arr, 20)
     0
     """
-    # TODO: actual code
-    pass
+    i = 0 
+    while i < len(arr):
+        if arr[i] == elem:
+            return i
+    return -1
+    
 
 
 def sort_array(arr):
