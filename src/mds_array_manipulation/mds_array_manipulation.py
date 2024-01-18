@@ -1,3 +1,4 @@
+import numpy as np
 def search_array(arr, elem):
     """
     Search for elem in a numpy array.
@@ -60,7 +61,7 @@ def sort_array(arr):
     pass
 
 
-def count_nonzero_elements(arr):
+def count_nonzero_elements(arr,tolerance=1e-15):
     """
     Count the number of non zero elements in an array.
     
@@ -91,8 +92,28 @@ def count_nonzero_elements(arr):
     >>> am.count_nonzero_elements(arr2d)
         {'Total Non-Zero Elements in Array': 6, 'Non-Zero Elements in Rows': array([2, 2, 2]), 'Non-Zero Elements in Columns': array([1, 2, 3])}
     """
-    # TODO: actual code
-    pass
+    
+    arr = arr.astype(float)
+    result = {}
+    total_nonzero = np.sum(np.abs(arr) > tolerance)
+
+    if arr.ndim == 1:
+        result["Total Non-Zero Elements in Array"] = total_nonzero
+    elif arr.ndim == 2:
+        row_counts = np.sum(np.abs(arr) > tolerance, axis=1, keepdims=True)
+        col_counts = np.sum(np.abs(arr) > tolerance, axis=0, keepdims=True)
+        result["Total Non-Zero Elements in Array"] = total_nonzero
+        result["Non-Zero Elements in Rows"] = row_counts.reshape(-1)
+        result["Non-Zero Elements in Columns"] = col_counts.reshape(-1)
+       
+    elif arr.ndim >= 3:
+        row_counts = np.sum(np.abs(arr) > tolerance, axis=2, keepdims=True)
+        col_counts = np.sum(np.abs(arr) > tolerance, axis=1, keepdims=True)
+        result["Total Non-Zero Elements in Array"] = total_nonzero
+        result["Non-Zero Elements in Rows"] = row_counts.reshape(-1)
+        result["Non-Zero Elements in Columns"] = col_counts.reshape(-1)
+
+    return result
 
 
 def argmax(arr, axis=None):
