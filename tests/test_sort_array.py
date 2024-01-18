@@ -41,13 +41,13 @@ def test_empty_array(empty_array):
 
 # checks if the function can sort arrays of integers and floats
 def test_sorts_numeric_types(one_d_int_array, one_d_float_array):
-    assert np.array_equal(sort_array(one_d_int_array), np.array(sorted(one_d_int_array)))
-    assert np.array_equal(sort_array(one_d_float_array), np.array(sorted(one_d_float_array)))
+    assert np.array_equal(sort_array(one_d_int_array), np.array([0, 1, 1, 3, 5, 9, 18, 24]))
+    assert np.array_equal(sort_array(one_d_float_array), np.array([0.0, 1.0, 1.5, 3.14, 5.1, 9.62, 18.88, 24.01]))
 
 # checks if the function can sort arrays of strings
-def test_sorts_numeric_types(one_d_string_array):
+def test_sorts_string_types(one_d_string_array):
     result = sort_array(one_d_string_array)
-    assert np.array_equal(result, np.array(sorted(one_d_string_array)))  
+    assert np.array_equal(result, np.array(['apple', 'banana', 'cat', 'dog', 'frog']))  
 
 # checks if a TypeError is raised for arrays with mixed data types
 def test_input_different_type():
@@ -57,12 +57,12 @@ def test_input_different_type():
 # checks if the function can sort arrays with negative numbers
 def test_negative_input(one_d_neg_array):
     result = sort_array(one_d_neg_array)
-    assert np.array_equal(result, np.array(sorted(one_d_neg_array)))
+    assert np.array_equal(result, np.array([-18, -3, -1, 0, 1, 5, 9, 24]))
 
 # checks if the function can sort a mixed-case string array in a case-insensitive manner
 def test_lowercase_uppercase_strings(one_d_string_array_mixed_case):
     result = sort_array(one_d_string_array_mixed_case)
-    assert np.array_equal(result, np.array(sorted(one_d_string_array_mixed_case, key=str.lower)))
+    assert np.array_equal(result, np.array(['apple', 'Banana', 'cat', 'Dog', 'Frog']))
 
 # checks if a sorted array remains unchanged after sorting again
 def test_already_sorted_array(one_d_int_array_sorted):
