@@ -51,3 +51,6 @@ def two_d_string_array():
 def three_d_int_array():
     return np.array([[[1,5,3,9],[18,24,0,1]], [[10,1,0,25],[-1,-200,4,33]]])
 
+@pytest.fixture
+def none_numpy_array():
+    return [1,5,18,24,0,1]
