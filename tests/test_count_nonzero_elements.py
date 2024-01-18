@@ -1,6 +1,7 @@
 import pytest
 import numpy as np
 from mds_array_manipulation.mds_array_manipulation import count_nonzero_elements
+from conftest import *
 
 #Test for 1D array
 def test_1d_array():
@@ -36,6 +37,6 @@ def test_empty_array():
 
 # Test for floating point numbers which are close to zero - setting tolerance level of 1e-15
 def test_floating_point_tolerance():
-    result = count_nonzero_elements()
+    result = count_nonzero_elements(one_d_float_tol_array)
     assert result == {'Total Non-Zero Elements in Array': 1}
 
