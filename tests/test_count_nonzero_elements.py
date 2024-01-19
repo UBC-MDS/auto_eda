@@ -1,11 +1,6 @@
 import pytest
 import numpy as np
-import sys
-import os
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-from src.mds_array_manipulation.mds_array_manipulation import count_nonzero_elements
-# from mds_array_manipulation.mds_array_manipulation import count_nonzero_elements
-from conftest import *
+from mds_array_manipulation.count_nonzero_elements import count_nonzero_elements
 
 #Test for 1D array
 def test_1d_array(one_d_int_array):
