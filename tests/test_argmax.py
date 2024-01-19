@@ -4,7 +4,7 @@ import sys
 import os
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from src.mds_array_manipulation.argmax import argmax
-# from conftest import *
+
 
 # Test case for a valid 1D integer array
 def test_argmax_1d_int_array(one_d_int_array):
