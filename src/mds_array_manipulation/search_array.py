@@ -30,7 +30,7 @@ def search_array(arr, elem):
 
     #Only accept numpy arrays
     if not isinstance(arr, np.ndarray):
-        raise ValueError("Input array must be numpy array")
+        raise TypeError("Input array must be numpy array")
     
     #Only accept numeric or string arrays
     if not (np.issubdtype(arr.dtype, np.number) or arr.dtype.kind in {'U', 'S'}):

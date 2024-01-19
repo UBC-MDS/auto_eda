@@ -35,6 +35,9 @@ def count_nonzero_elements(arr,tolerance=1e-15):
     
     if not isinstance(arr, np.ndarray):
         raise TypeError("Input must be a numpy array")
+    if np.issubdtype(arr.dtype, np.number) == False:
+        raise ValueError("Input array must contain numeric data types only")
+    
     arr = arr.astype(float)
     result = {}
     total_nonzero = np.sum(np.abs(arr) > tolerance)

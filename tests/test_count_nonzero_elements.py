@@ -23,6 +23,18 @@ def test_3d_array(three_d_int_array):
     for key, value in expected.items():
         assert np.array_equal(result[key], value)
 
+# checks if the function correctly handles inputs that are not numpy arrays
+def test_input_not_numpy_array():
+    non_numpy_inputs = [
+        [1, 2, 3],
+        (1, 2, 3),
+        100,
+        "not a numpy array",
+    ]
+    for input in non_numpy_inputs:
+        with pytest.raises(TypeError):
+            count_nonzero_elements(input)
+
 # Test for checking the input data type
 def test_input(one_d_string_array):
     with pytest.raises(ValueError):
