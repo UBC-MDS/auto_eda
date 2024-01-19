@@ -1,6 +1,6 @@
 import pytest
 import numpy as np
-from src.mds_array_manipulation.sort_array import sort_array
+from mds_array_manipulation.sort_array import sort_array
 
 # The following test is for the function sort_array
 
