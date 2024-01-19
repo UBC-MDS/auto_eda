@@ -54,18 +54,10 @@ def sort_array(arr):
         key = arr_list[i]
         j = i - 1
 
-        while j >= 0:
-            if isinstance(arr_list[j], str) and isinstance(key, str):
-                comparison = str(arr_list[j]).lower() > str(key).lower()
-            else:
-                comparison = arr_list[j] > key
+        while j >= 0 and ((str(arr_list[j]).lower() > str(key).lower()) if isinstance(key, str) else (arr_list[j] > key)):
+            arr_list[j + 1] = arr_list[j]
+            j -= 1
 
-            if comparison:
-                arr_list[j + 1] = arr_list[j]
-                j -= 1
-            else:
-                break
-        
         arr_list[j + 1] = key
 
     return np.array(arr_list)
