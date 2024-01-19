@@ -1,7 +1,5 @@
 import pytest
 import numpy as np
-import sys
-import os
 
 from mds_array_manipulation.search_array import search_array
 
