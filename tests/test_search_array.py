@@ -50,3 +50,20 @@ def test_tuple_array():
     tuple_array = np.array([(1,2), (3,4), (5,6)], dtype="i, i")
     with pytest.raises(ValueError):
         search_array(tuple_array, (3,4))
+
+# checks if the function correctly handles inputs that are not numpy arrays
+def test_input_not_numpy_array():
+    non_numpy_inputs = [
+        [1, 2, 3],
+        (1, 2, 3),
+        100,
+        "not a numpy array",
+    ]
+    for input in non_numpy_inputs:
+        with pytest.raises(TypeError):
+            search_array(input, 20)
+
+# Test non 1D array
+def test_non_1d_array(two_d_int_array):
+    with pytest.raises(ValueError):
+        search_array(two_d_int_array, 20)
