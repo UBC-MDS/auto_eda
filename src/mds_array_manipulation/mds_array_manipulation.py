@@ -30,37 +30,6 @@ def search_array(arr, elem):
     pass
 
 
-def sort_array(arr):
-    """
-    Sort a numpy array in ascending or alphabetical order.
-
-    Parameters
-    ----------
-    arr : numpy.array
-        The numpy array to be sorted. The array can contain numerical 
-        or string values.
-
-    Returns
-    -------
-    numpy.array
-        A new numpy array sorted in ascending or alphabetical order.
-
-    Examples
-    --------
-    >>> import numpy as np
-    >>> from mds_array_manipulation import mds_array_manipulation as am
-    >>> arr = np.array([20, 10, 40, 30, 50, 90, 60])
-    >>> sort_array(arr)
-    array([10, 20, 30, 40, 50, 60, 90])
-
-    >>> arr_str = np.array(["orange", "grape", "apple"])
-    >>> sort_array(arr_str)
-    array(['apple', 'grape', 'orange'])
-    """
-    # TODO: actual code
-    pass
-
-
 def count_nonzero_elements(arr,tolerance=1e-15):
     """
     Count the number of non zero elements in an array.
@@ -92,28 +61,8 @@ def count_nonzero_elements(arr,tolerance=1e-15):
     >>> am.count_nonzero_elements(arr2d)
         {'Total Non-Zero Elements in Array': 6, 'Non-Zero Elements in Rows': array([2, 2, 2]), 'Non-Zero Elements in Columns': array([1, 2, 3])}
     """
-    
-    arr = arr.astype(float)
-    result = {}
-    total_nonzero = np.sum(np.abs(arr) > tolerance)
-
-    if arr.ndim == 1:
-        result["Total Non-Zero Elements in Array"] = total_nonzero
-    elif arr.ndim == 2:
-        row_counts = np.sum(np.abs(arr) > tolerance, axis=1, keepdims=True)
-        col_counts = np.sum(np.abs(arr) > tolerance, axis=0, keepdims=True)
-        result["Total Non-Zero Elements in Array"] = total_nonzero
-        result["Non-Zero Elements in Rows"] = row_counts.reshape(-1)
-        result["Non-Zero Elements in Columns"] = col_counts.reshape(-1)
-       
-    elif arr.ndim >= 3:
-        row_counts = np.sum(np.abs(arr) > tolerance, axis=2, keepdims=True)
-        col_counts = np.sum(np.abs(arr) > tolerance, axis=1, keepdims=True)
-        result["Total Non-Zero Elements in Array"] = total_nonzero
-        result["Non-Zero Elements in Rows"] = row_counts.reshape(-1)
-        result["Non-Zero Elements in Columns"] = col_counts.reshape(-1)
-
-    return result
+    # TODO: actual code
+    pass
 
 
 def argmax(arr, axis=None):

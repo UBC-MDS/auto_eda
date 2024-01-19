@@ -14,8 +14,16 @@ def one_d_int_array_one_element():
     return np.array([5])
 
 @pytest.fixture
+def one_d_string_array_one_element():
+    return np.array(['dog'])
+
+@pytest.fixture
 def one_d_int_array_all_zero():
     return np.array([0,0,0,0,0,0])
+
+@pytest.fixture
+def one_d_int_array_sorted():
+    return np.array([1, 2, 3, 4, 5])
 
 @pytest.fixture
 def one_d_float_array():
@@ -32,6 +40,10 @@ def one_d_neg_array():
 @pytest.fixture
 def one_d_string_array():
     return np.array(['dog', 'cat', 'banana', 'apple', 'frog'])
+
+@pytest.fixture
+def one_d_string_array_mixed_case():
+    return np.array(['Dog', 'cat', 'Banana', 'apple', 'Frog'])
 
 @pytest.fixture
 def two_d_int_array():
@@ -51,3 +63,6 @@ def two_d_string_array():
 def three_d_int_array():
     return np.array([[[1,5,3,9],[18,24,0,1]], [[10,1,0,25],[-1,-200,4,33]]])
 
+@pytest.fixture
+def none_numpy_array():
+    return [1,5,18,24,0,1]
