@@ -1,3 +1,5 @@
+import numpy as np 
+
 def search_array(arr, elem):
     """
     Search for elem in a numpy array.
@@ -25,6 +27,19 @@ def search_array(arr, elem):
     >>> search_array(arr, 20)
     0
     """
+
+    #Only accept numpy arrays
+    if not isinstance(arr, np.ndarray):
+        raise ValueError("Input array must be numpy array")
+    
+    #Only accept numeric or string arrays
+    if not (np.issubdtype(arr.dtype, np.number) or arr.dtype.kind in {'U', 'S'}):
+        raise ValueError("Input array must be numeric or string array")
+    
+    #Only accept 1D array
+    if len(arr.shape) > 1:
+        raise ValueError("Input array must be 1D array")
+
     i = 0 
     while i < len(arr):
         if arr[i] == elem:

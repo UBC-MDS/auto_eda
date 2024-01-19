@@ -47,6 +47,6 @@ def test_1d_string_array(one_d_string_array):
 
 #Test tuple
 def test_tuple_array():
-    tuple_array = np.array([(1,2), (3,4), (5,6)])
+    tuple_array = np.array([(1,2), (3,4), (5,6)], dtype="i, i")
     with pytest.raises(ValueError):
         search_array(tuple_array, (3,4))
