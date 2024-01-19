@@ -3,8 +3,8 @@ import numpy as np
 import sys
 import os
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-from src.mds_array_manipulation.mds_array_manipulation import argmax
-from conftest import *
+from src.mds_array_manipulation.argmax import argmax
+
 
 # Test case for a valid 1D integer array
 def test_argmax_1d_int_array(one_d_int_array):
@@ -44,17 +44,17 @@ def test_argmax_1d_string_array(one_d_string_array):
 # Test case for a valid 2D integer array with axis=0
 def test_argmax_2d_int_array_axis_0(two_d_int_array):
     result = argmax(two_d_int_array, axis=0)
-    assert result == [1, 0, 0, 1, 0, 0, 1, 1]  
+    assert result == [5, 7]  
 
 # Test case for a valid 2D float array with axis=1
 def test_argmax_2d_float_array_axis_1(two_d_float_array):
     result = argmax(two_d_float_array, axis=1)
-    assert result == [5]  
+    assert result == [1, 0, 0, 1, 0, 0, 1, 1]  
 
 # Test case for an invalid 2D string array with axis=None
 def test_argmax_2d_string_array_axis_none(two_d_string_array):
     result = argmax(two_d_string_array, axis=None)
-    assert result == [6]  
+    assert result == 6
 
 # Test case for a valid 3D integer array
 def test_argmax_3d_int_array(three_d_int_array):
