@@ -3,7 +3,7 @@ import numpy as np
 import sys
 import os
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-from src.mds_array_manipulation.mds_array_manipulation import argmax
+from src.mds_array_manipulation.argmax import argmax
 from conftest import *
 
 # Test case for a valid 1D integer array
