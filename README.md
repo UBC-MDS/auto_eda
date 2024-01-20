@@ -33,6 +33,11 @@ $ poetry install
 ```
 If you dont have poetry installed in your base environment, you can follow the [installation guide](https://python-poetry.org/docs/#installation) for poetry.
 
+4. To get the coverage report, run the following code:
+```
+poetry run pytest tests/ --cov=src/mds_array_manipulation/
+```
+
 ### Future Update
 
 Once the package is full developed and published to PyPI, you can use it using below command:
