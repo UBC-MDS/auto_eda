@@ -16,6 +16,27 @@ The package aims to recreate some of the basic array operations available in the
   
 ## Installation
 
+Note: This package is currently under development and not yet available on PyPI. To install, please clone the repository and install the package locally. Follow the below instructions to install the package.
+
+1. Clone the github repository using:
+```bash
+https://github.com/UBC-MDS/mds_array_manipulation.git
+```
+2. Run the below commands to create the virual environment:
+```bash
+$ conda create --name mds_array_manipulation python=3.9 -y
+$ conda activate mds_array_manipulation
+```
+3. You can install `mds_array_manipulation` package using `poetry`
+```
+$ poetry install
+```
+If you dont have poetry installed in your base environment, you can follow the [installation guide](https://python-poetry.org/docs/#installation) for poetry.
+
+### Future Update
+
+Once the package is full developed and published to PyPI, you can use it using below command:
+
 ```bash
 $ pip install mds_array_manipulation
 ```
