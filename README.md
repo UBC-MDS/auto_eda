@@ -1,5 +1,7 @@
 # mds_array_manipulation
 
+[![Documentation Status](https://readthedocs.org/projects/mds-array-manipulation/badge/?version=latest)](https://mds-array-manipulation.readthedocs.io/en/latest/?badge=latest)
+
 The package is intended to do array manipulations functions like Searching, Sorting, Counting non-zero elements, Finding indices of max value. 
 This is a package developed for the group-17 project for the UBC MDS DSCI 524 (Collaborative Software Development) course.
 
