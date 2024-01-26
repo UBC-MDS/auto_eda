@@ -59,7 +59,11 @@ Contains functions: Searching, Sorting, Counting non-zero elements, Finding indi
 Example usage:
 ```bash
 >>> import numpy as np
->>> from mds_array_manipulation.mds_array_manipulation import search_array, argmax, sort_array, count_nonzero_elements 
+>>> from mds_array_manipulation.search_array import search_array
+>>> from mds_array_manipulation.argmax import argmax
+>>> from mds_array_manipulation.sort_array import sort_array
+>>> from mds_array_manipulation.count_nonzero_elements import count_nonzero_elements
+
 >>> arr = np.array([20, 10, 40, 30, 50, 90, 60])
 >>> search_array(arr, 50)
     4
