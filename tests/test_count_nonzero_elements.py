@@ -37,7 +37,7 @@ def test_input_not_numpy_array():
 
 # Test for checking the input data type
 def test_input(one_d_string_array):
-    with pytest.raises(ValueError):
+    with pytest.raises(TypeError):
         count_nonzero_elements(one_d_string_array)
 
 # Test for all zero elements
