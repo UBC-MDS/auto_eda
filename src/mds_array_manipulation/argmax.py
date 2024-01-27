@@ -16,6 +16,13 @@ def argmax(arr, axis=None):
     indices : int or tuple of ints
         Indices of the maximum values along the specified axis.
 
+    Raises
+    ------
+    TypeError
+        If the input is not a numpy array.
+    ValueError
+        If the input array is empty, or the axis specified is greater than the number of dimensions
+
     Notes
     -----
     If there are multiple occurrences of the maximum values, the indices
@@ -46,7 +53,7 @@ def argmax(arr, axis=None):
     # Coding Part
     # Check numpy array, not empty numpy array, and not specified axis=1 when input array is 1D numpy array
     if not isinstance(arr, np.ndarray):
-	    raise ValueError("Input array is not a numpy array. Please enter only numpy array.")
+	    raise TypeError("Input array is not a numpy array. Please enter only numpy array.")
     if arr.size == 0: 
 	    raise ValueError("Input array is an empty array. Please do not enter an empty array.")
     if (arr.ndim == 1) and (axis == 1): 
