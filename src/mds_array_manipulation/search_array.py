@@ -8,13 +8,21 @@ def search_array(arr, elem):
     ----------
     arr : numpy.array
         The numpy array to search
-    elem : object to search for in the array
+    elem : numeric or string
+        Object to search for in the array
     
     Returns
     -------
     int
         Index of the first occurence of the element in the array, -1 if not found
-        
+
+    Raises
+    ------
+    TypeError
+        If the input is not a numpy array, or does not contain numeric or string values.
+    ValueError
+        If the input array is not 1-dimensional.
+
     Examples
     --------
     >>> import numpy as np
@@ -34,7 +42,7 @@ def search_array(arr, elem):
     
     #Only accept numeric or string arrays
     if not (np.issubdtype(arr.dtype, np.number) or arr.dtype.kind in {'U', 'S'}):
-        raise ValueError("Input array must be numeric or string array")
+        raise TypeError("Input array must be numeric or string array")
     
     #Only accept 1D array
     if len(arr.shape) > 1:

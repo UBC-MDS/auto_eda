@@ -75,5 +75,5 @@ def test_argmax_1d_array_axis_2(one_d_int_array):
 
 # Test case for none numpy array
 def test_argmax_none_numpy_array(none_numpy_array):
-    with pytest.raises(ValueError, match="Input array is not a numpy array. Please enter only numpy array."):
+    with pytest.raises(TypeError, match="Input array is not a numpy array. Please enter only numpy array."):
         argmax(none_numpy_array)
