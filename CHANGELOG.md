@@ -2,9 +2,15 @@
 
 
 
-## v0.0.0 (2024-01-30)
+## v0.0.0 (2024-01-31)
 
 ### Unknown
+
+* Merge pull request #80 from UBC-MDS/67-setup-github-actions-cd
+
+Update token usage ([`930cc34`](https://github.com/UBC-MDS/mds_array_manipulation/commit/930cc34256475e1b7969321f14c68aaf60d3cf06))
+
+* Update token usage ([`7d81c0c`](https://github.com/UBC-MDS/mds_array_manipulation/commit/7d81c0cb1154ab4597e7c2acd225fcee9a1b7404))
 
 * Merge pull request #73 from UBC-MDS/67-setup-github-actions-cd
 
