@@ -1,9 +1,15 @@
 # mds_array_manipulation
 
-[![Documentation Status](https://readthedocs.org/projects/mds-array-manipulation/badge/?version=latest)](https://mds-array-manipulation.readthedocs.io/en/latest/?badge=latest)
+[![ci-cd](https://github.com/UBC-MDS/mds-array-manipulation/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/UBC-MDS/mds-array-manipulation/actions/workflows/ci-cd.yml) ![release](https://img.shields.io/github/release-date/UBC-MDS/mds-array-manipulation) ![version](https://img.shields.io/github/v/release/UBC-MDS/mds-array-manipulation) [![Documentation Status](https://readthedocs.org/projects/mds-array-manipulation/badge/?version=latest)](https://mds-array-manipulation.readthedocs.io/en/latest/?badge=latest) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Python 3.9.0](https://img.shields.io/badge/python-3.9.0-blue.svg)](https://www.python.org/downloads/release/python-390/)
+
+## Summary
+
+### Project Summary
 
 The package is intended to do array manipulations functions like Searching, Sorting, Counting non-zero elements, Finding indices of max value. 
 This is a package developed for the group-17 project for the UBC MDS DSCI 524 (Collaborative Software Development) course.
+
+### Functions Included in the Package
 
 - `sort_array`: Takes a numpy array of integers or strings and returns the array in sorted order
 
@@ -13,8 +19,9 @@ This is a package developed for the group-17 project for the UBC MDS DSCI 524 (C
 
 - `argmax`: Returns the index of the max element in the array
 
-The package aims to recreate some of the basic array operations available in the [numpy package](https://github.com/numpy/numpy).
+### Fit into the Python Ecosystem
 
+There are several Python packages focused on array manipulation, such as numpy, which are used for a wide range of array manipulation. However, the package aims to recreate some of the basic array operations available in the [numpy package](https://github.com/numpy/numpy).
   
 ## Installation
 
