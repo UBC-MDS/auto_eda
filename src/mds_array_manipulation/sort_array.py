@@ -22,7 +22,7 @@ def sort_array(arr):
     TypeError
         If the input is not a numpy array.
     ValueError
-        If the input array is not 1-dimensional.  This function does not 
+        If the input array is not 1-dimensional. This function does not 
         support multi-dimensional arrays and will raise a ValueError 
         if a multi-dimensional array is passed as input.
 
