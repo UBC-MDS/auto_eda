@@ -2,6 +2,19 @@
 
 
 
+## v0.0.3 (2024-02-01)
+
+### Fix
+
+* fix: Feedback addressed by added badges and improved summary on README.md - 3 ([`7850950`](https://github.com/UBC-MDS/mds_array_manipulation/commit/785095056a072eb91ac182f08cb6fb4239cb57a5))
+
+### Unknown
+
+* Merge pull request #83 from UBC-MDS/72-add-badges-for-ci-python-package-version
+
+fix: Feedback addressed by added badges and improved summary on README.md - 3 ([`25a65d6`](https://github.com/UBC-MDS/mds_array_manipulation/commit/25a65d6ad480d58770c33aab1994acf0827e1bac))
+
+
 ## v0.0.2 (2024-02-01)
 
 ### Fix
