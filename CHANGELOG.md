@@ -2,6 +2,29 @@
 
 
 
+## v0.0.4 (2024-02-02)
+
+### Fix
+
+* fix: Feedback addressed by adding inline comments in count_nonzero_elements ([`aca33da`](https://github.com/UBC-MDS/mds_array_manipulation/commit/aca33da8c57307e91a2646b58e09727a99a4446d))
+
+* fix: Feedback addressed by updating search_array docstring ([`053a606`](https://github.com/UBC-MDS/mds_array_manipulation/commit/053a6064500e1c95f02b45c3c843f7eac6232753))
+
+* fix: Feedback addressed by updating sort_array docstring ([`f4c8999`](https://github.com/UBC-MDS/mds_array_manipulation/commit/f4c8999850510224a7e6ec94d25b6798b19457df))
+
+* fix: Feedback addressed by updating table formatting in Vignette ([`3516818`](https://github.com/UBC-MDS/mds_array_manipulation/commit/3516818e308ac257869456081b621c1c767a2f24))
+
+### Unknown
+
+* Merge pull request #84 from UBC-MDS/75-fix-table-formatting-in-vignette
+
+fix: Feedback addressed by updating table formatting in Vignette ([`891f560`](https://github.com/UBC-MDS/mds_array_manipulation/commit/891f5605c7f8da0977f743825bb5baec1dd01b95))
+
+* Merge pull request #85 from UBC-MDS/function_docs
+
+Function docs ([`8a1bb23`](https://github.com/UBC-MDS/mds_array_manipulation/commit/8a1bb23ef3762f29b74d12a0e764446e3aae31b2))
+
+
 ## v0.0.3 (2024-02-01)
 
 ### Fix
