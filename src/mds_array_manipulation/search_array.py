@@ -1,6 +1,6 @@
 import numpy as np 
-
-def search_array(arr, elem):
+from typing import Union
+def search_array(arr : np.array, elem : Union[int, float, str]) -> int:
     """
     Search for elem in a numpy array. This function is 
     specifically designed to work only with 1-dimensional arrays.
