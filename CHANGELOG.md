@@ -2,6 +2,19 @@
 
 
 
+## v0.0.6 (2024-02-02)
+
+### Fix
+
+* fix: Feedback addressed by adding type hints for function definitions. ([`6b66a0a`](https://github.com/UBC-MDS/mds_array_manipulation/commit/6b66a0acf606f7c2390c503da1f49b8cd678ce65))
+
+### Unknown
+
+* Merge pull request #86 from UBC-MDS/78-add-type-hint-to-inputoutput
+
+fix: Feedback addressed by adding type hints for function definitions. ([`3b218f5`](https://github.com/UBC-MDS/mds_array_manipulation/commit/3b218f559b5fbcd297dedc28074f181aaa4b34f1))
+
+
 ## v0.0.5 (2024-02-02)
 
 ### Fix
