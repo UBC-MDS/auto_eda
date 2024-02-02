@@ -21,7 +21,7 @@ This is a package developed for the group-17 project for the UBC MDS DSCI 524 (C
 
 ### Fit into the Python Ecosystem
 
-There are several Python packages focused on array manipulation, such as numpy, which have extensive features. This package aims to recreate some of the basic array operations available in the [numpy package](https://numpy.org/devdocs/index.html#numpy-documentation) for use in Data Science preprocessing workflows. The package is intended to focus only on the basic operations to make Data science worflows easier to understand and use for beginner programmers.
+There are several Python packages focused on array manipulation, such as numpy, which have extensive features. This package aims to recreate some of the basic array operations available in the [numpy package](https://numpy.org/devdocs/index.html#numpy-documentation) (Numpy Developers, 2008-2024) for use in Data Science preprocessing workflows. The package is intended to focus only on the basic operations to make Data science worflows easier to understand and use for beginner programmers.
   
 ## Installation
 
