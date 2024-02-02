@@ -2,6 +2,21 @@
 
 
 
+## v0.0.7 (2024-02-02)
+
+### Fix
+
+* fix: Feedback addressed by changing the return type for count_nonzero_elements ([`c2a7b89`](https://github.com/UBC-MDS/mds_array_manipulation/commit/c2a7b897521d2b851041a20080afecabe207b8a4))
+
+### Unknown
+
+* Merge pull request #87 from UBC-MDS/79-count_nonzero_elements-return-type-inconsistent
+
+fix: Feedback addressed by changing the return type for count_nonzero… ([`9677e6a`](https://github.com/UBC-MDS/mds_array_manipulation/commit/9677e6a56b7a805601c3a9d35be4d65a15647450))
+
+* fix:Feedback addressed by changing the return type for count function ([`ed6b402`](https://github.com/UBC-MDS/mds_array_manipulation/commit/ed6b4027cfccf5db8d87d42d6bba5d124eb8bd3e))
+
+
 ## v0.0.6 (2024-02-02)
 
 ### Fix
