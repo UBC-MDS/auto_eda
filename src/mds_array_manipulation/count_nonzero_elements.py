@@ -1,6 +1,8 @@
 
 import numpy as np
-def count_nonzero_elements(arr,tolerance=1e-15):
+from typing import Union, Optional
+
+def count_nonzero_elements(arr : np.array,tolerance : Optional[float]=1e-15) -> dict:
     """
     Count the number of non zero elements in an array.
     

@@ -1,6 +1,6 @@
 import numpy as np
 
-def sort_array(arr):
+def sort_array(arr : np.array) -> np.array:
     """
     Sort a numpy array in ascending or alphabetical order.
     The sorting is case-insensitive for strings.
