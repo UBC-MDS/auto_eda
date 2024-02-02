@@ -1,33 +1,29 @@
-
 import numpy as np
-from typing import Union, Optional
+from typing import Optional, Union
 
-def count_nonzero_elements(arr : np.array,tolerance : Optional[float]=1e-15) -> dict:
+def count_nonzero_elements(arr: np.array, tolerance: Optional[float] = 1e-15, axis = None) -> Union[int, np.ndarray]:
     """
-    Count the number of non zero elements in an array.
-    
+    Count the number of non-zero elements in an array.
+
     Parameters
     ----------
     arr : numpy.array
-        The Input array of any dimension (1D, 2D or 3D)
+        The input array of any dimension (1D, 2D, or 3D).
     tolerance : float, optional
-        The tolerance for considering floating point values greater than 0
-        
+        The tolerance for considering floating-point values greater than 0.
+    axis : int or Tuple[int], optional
+        Axis or axes along which to count non-zero elements. Default is None.
+
     Returns
     -------
-    dict : A dictionary containing information about non-zero elements. Below are the keys in the dictionary
-      - For 1D array: {'Total Non-Zero Elements in Array': total_nonzero}
-      - For 2D or 3D array:
-        {
-          'Non-Zero Elements in Rows': row_counts,
-          'Non-Zero Elements in Columns': col_counts,
-          'Total Non-Zero Elements in Array': total_nonzero
-        }
+    Union[int, np.ndarray]: Returns either an integer (for None), or an array based on the 'axis'.
+      - For None: Total Non-Zero Elements in Array.
+      - For axis: Non-Zero Elements along the specified axis/axes.
 
     Raises
     ------
     TypeError
-        If the input is not a numpy array, or the input array does not contain numeric data types
+        If the input is not a numpy array, or the input array does not contain numeric data types.
 
     Examples
     --------
@@ -35,43 +31,22 @@ def count_nonzero_elements(arr : np.array,tolerance : Optional[float]=1e-15) -> 
     >>> from mds_array_manipulation import mds_array_manipulation as am
     >>> arr = np.array([0, 1, 2])
     >>> am.count_nonzero_elements(arr)
-    {'Total Non-Zero Elements in Array': 2}
+    2
     >>> arr2d = np.array([[0, 1, 2], [3, 0, 5], [0, 7, 8]])
-    >>> am.count_nonzero_elements(arr2d)
-        {'Total Non-Zero Elements in Array': 6, 'Non-Zero Elements in Rows': array([2, 2, 2]), 'Non-Zero Elements in Columns': array([1, 2, 3])}
+    >>> am.count_nonzero_elements(arr2d, axis=1)
+    array([2, 2, 2])
+    >>> am.count_nonzero_elements(arr2d, axis=0)
+    array([1, 2, 3])
     """
-    
-    # Check if input is a numpy array
+
     if not isinstance(arr, np.ndarray):
         raise TypeError("Input must be a numpy array")
-    
-    # Check if the array contains numeric data types
     if np.issubdtype(arr.dtype, np.number) == False:
-        raise TypeError("Input array must contain numeric data types only")
-    
-    # Count the total number of non-zero elements considering the tolerance
+        raise TypeError("Input array must be numeric data only")
+
     arr = arr.astype(float)
-    result = {}
-    total_nonzero = np.sum(np.abs(arr) > tolerance)
 
-    # Handling for 1D array
-    if arr.ndim == 1:
-        result["Total Non-Zero Elements in Array"] = total_nonzero
-
-    # Handling for 2D array    
-    elif arr.ndim == 2:
-        row_counts = np.sum(np.abs(arr) > tolerance, axis=1, keepdims=True)
-        col_counts = np.sum(np.abs(arr) > tolerance, axis=0, keepdims=True)
-        result["Total Non-Zero Elements in Array"] = total_nonzero
-        result["Non-Zero Elements in Rows"] = row_counts.reshape(-1)
-        result["Non-Zero Elements in Columns"] = col_counts.reshape(-1)
-       
-    # Handling for 3D or higher dimensional arrays   
-    elif arr.ndim >= 3:
-        row_counts = np.sum(np.abs(arr) > tolerance, axis=2, keepdims=True)
-        col_counts = np.sum(np.abs(arr) > tolerance, axis=1, keepdims=True)
-        result["Total Non-Zero Elements in Array"] = total_nonzero
-        result["Non-Zero Elements in Rows"] = row_counts.reshape(-1)
-        result["Non-Zero Elements in Columns"] = col_counts.reshape(-1)
-
-    return result
+    if axis is None:
+        return np.sum(np.abs(arr) > tolerance)
+    else:
+        return np.sum(np.abs(arr) > tolerance, axis=axis)
