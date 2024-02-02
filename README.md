@@ -1,6 +1,6 @@
 # mds_array_manipulation
 
-[![ci-cd](https://github.com/UBC-MDS/mds_array_manipulation/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/UBC-MDS/mds_array_manipulation/actions/workflows/ci-cd.yml) ![release](https://img.shields.io/github/release-date/UBC-MDS/mds_array_manipulation) ![version](https://img.shields.io/github/v/release/UBC-MDS/mds_array_manipulation) [![Documentation Status](https://readthedocs.org/projects/mds_array_manipulation/badge/?version=latest)](https://mds_array_manipulation.readthedocs.io/en/latest/?badge=latest) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Python 3.9.0](https://img.shields.io/badge/python-3.9.0-blue.svg)](https://www.python.org/downloads/release/python-390/)
+[![Documentation Status](https://readthedocs.org/projects/mds-array-manipulation/badge/?version=latest)](https://mds-array-manipulation.readthedocs.io/en/latest/?badge=latest) [![ci-cd](https://github.com/UBC-MDS/mds_array_manipulation/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/UBC-MDS/mds_array_manipulation/actions/workflows/ci-cd.yml) ![release](https://img.shields.io/github/release-date/UBC-MDS/mds_array_manipulation) ![version](https://img.shields.io/github/v/release/UBC-MDS/mds_array_manipulation) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Python 3.9.0](https://img.shields.io/badge/python-3.9.0-blue.svg)](https://www.python.org/downloads/release/python-390/)
 
 ## Summary
 
