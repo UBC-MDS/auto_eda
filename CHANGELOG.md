@@ -2,6 +2,13 @@
 
 
 
+## v0.0.5 (2024-02-02)
+
+### Fix
+
+* fix: Feedback addressed by updating badges ([`810cd89`](https://github.com/UBC-MDS/mds_array_manipulation/commit/810cd89bec7642693652cac7282f32d3fec6f1a1))
+
+
 ## v0.0.4 (2024-02-02)
 
 ### Fix
