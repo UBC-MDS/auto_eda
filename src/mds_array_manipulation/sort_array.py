@@ -3,7 +3,8 @@ import numpy as np
 def sort_array(arr):
     """
     Sort a numpy array in ascending or alphabetical order.
-    The sorting is case-insensitive for strings.
+    The sorting is case-insensitive for strings. This function is 
+    specifically designed to work only with 1-dimensional arrays.
 
     Parameters
     ----------
@@ -21,7 +22,9 @@ def sort_array(arr):
     TypeError
         If the input is not a numpy array.
     ValueError
-        If the input array is not 1-dimensional.
+        If the input array is not 1-dimensional. This function does not 
+        support multi-dimensional arrays and will raise a ValueError 
+        if a multi-dimensional array is passed as input.
 
     Examples
     --------

@@ -39,18 +39,24 @@ def count_nonzero_elements(arr,tolerance=1e-15):
         {'Total Non-Zero Elements in Array': 6, 'Non-Zero Elements in Rows': array([2, 2, 2]), 'Non-Zero Elements in Columns': array([1, 2, 3])}
     """
     
-    
+    # Check if input is a numpy array
     if not isinstance(arr, np.ndarray):
         raise TypeError("Input must be a numpy array")
+    
+    # Check if the array contains numeric data types
     if np.issubdtype(arr.dtype, np.number) == False:
         raise TypeError("Input array must contain numeric data types only")
     
+    # Count the total number of non-zero elements considering the tolerance
     arr = arr.astype(float)
     result = {}
     total_nonzero = np.sum(np.abs(arr) > tolerance)
 
+    # Handling for 1D array
     if arr.ndim == 1:
         result["Total Non-Zero Elements in Array"] = total_nonzero
+
+    # Handling for 2D array    
     elif arr.ndim == 2:
         row_counts = np.sum(np.abs(arr) > tolerance, axis=1, keepdims=True)
         col_counts = np.sum(np.abs(arr) > tolerance, axis=0, keepdims=True)
@@ -58,6 +64,7 @@ def count_nonzero_elements(arr,tolerance=1e-15):
         result["Non-Zero Elements in Rows"] = row_counts.reshape(-1)
         result["Non-Zero Elements in Columns"] = col_counts.reshape(-1)
        
+    # Handling for 3D or higher dimensional arrays   
     elif arr.ndim >= 3:
         row_counts = np.sum(np.abs(arr) > tolerance, axis=2, keepdims=True)
         col_counts = np.sum(np.abs(arr) > tolerance, axis=1, keepdims=True)
