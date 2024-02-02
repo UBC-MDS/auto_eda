@@ -6,12 +6,12 @@
 
 ### Project Summary
 
-The package is intended to do array manipulations functions like Searching, Sorting, Counting non-zero elements, Finding indices of max value. 
-This is a package developed for the group-17 project for the UBC MDS DSCI 524 (Collaborative Software Development) course.
+The package is intended to do basic array manipulations functions like Searching, Sorting, Counting non-zero elements, Finding indices of max value. 
+This is a package developed for the group-17 project for the UBC MDS DSCI 524 (Collaborative Software Development) course. Documentation can be found [here](https://mds-array-manipulation.readthedocs.io/en/latest/?badge=latest)
 
 ### Functions Included in the Package
 
-- `sort_array`: Takes a numpy array of integers or strings and returns the array in sorted order
+- `sort_array`: Takes a numpy array of integers or strings and returns the array in sorted order, using Insertion Sort (Sedgewick, 1983).
 
 - `search_array`: Searches for and returns the index of a specified element in a numpy array, if it exists
 
@@ -21,38 +21,32 @@ This is a package developed for the group-17 project for the UBC MDS DSCI 524 (C
 
 ### Fit into the Python Ecosystem
 
-There are several Python packages focused on array manipulation, such as numpy, which are used for a wide range of array manipulation. However, the package aims to recreate some of the basic array operations available in the [numpy package](https://github.com/numpy/numpy).
+There are several Python packages focused on array manipulation, such as numpy, which have extensive features. This package aims to recreate some of the basic array operations available in the [numpy package](https://numpy.org/devdocs/index.html#numpy-documentation) (Numpy Developers, 2008-2024) for use in Data Science preprocessing workflows. The package is intended to focus only on the basic operations to make Data science worflows easier to understand and use for beginner programmers.
   
 ## Installation
 
-Note: This package is currently under development and not yet available on PyPI. To install, please clone the repository and install the package locally. Follow the below instructions to install the package.
+Installation can be done from pypi using the following command
+
+```bash
+$ pip install mds_array_manipulation
+```
+
+### Installation from source
 
 1. Clone the github repository using:
 ```bash
-https://github.com/UBC-MDS/mds_array_manipulation.git
+git clone https://github.com/UBC-MDS/mds_array_manipulation.git
 ```
-2. Run the below commands to create the virual environment:
-```bash
-$ conda create --name mds_array_manipulation python=3.9 -y
-$ conda activate mds_array_manipulation
-```
-3. You can install `mds_array_manipulation` package using `poetry`
+
+2. You can install `mds_array_manipulation` package using `poetry`
 ```
 $ poetry install
 ```
 If you dont have poetry installed in your base environment, you can follow the [installation guide](https://python-poetry.org/docs/#installation) for poetry.
 
-4. To get the coverage report, run the following code:
+3. To get the coverage report, run the following code:
 ```
 poetry run pytest tests/ --cov=src/mds_array_manipulation/
-```
-
-### Future Update
-
-Once the package is full developed and published to PyPI, you can use it using below command:
-
-```bash
-$ pip install mds_array_manipulation
 ```
 
 ## Features
@@ -64,6 +58,8 @@ Contains functions: Searching, Sorting, Counting non-zero elements, Finding indi
 - Python 3 or greater
 
 ## Usage
+
+A full vignette can be found on the documentation site [here](https://mds-array-manipulation.readthedocs.io/en/latest/example.html)
 
 Example usage:
 ```bash
@@ -81,7 +77,7 @@ Example usage:
 >>> sort_array(arr)
     array([10, 20, 30, 40, 50, 60, 90])
 >>> count_nonzero_elements(arr)
-    {'Total Non-Zero Elements in Array': 7}
+    7
 ```
 
 ## Contributing
@@ -102,3 +98,8 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 ## Credits
 
 `mds_array_manipulation` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
+## References
+
+- Sedgewick, Robert (1983). Algorithms. Addison-Wesley. p. 95. ISBN 978-0-201-06672-2.
+- NumPy Developers (2008-2024). NumPy documentation. Version: 2.0.dev0 
