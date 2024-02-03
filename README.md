@@ -29,7 +29,7 @@ There are several Python packages focused on array manipulation, such as numpy, 
 Installation can be done from pypi using the following command
 
 ```bash
-$ pip install mds_array_manipulation
+pip install mds_array_manipulation
 ```
 
 ### Installation from source
@@ -39,9 +39,14 @@ $ pip install mds_array_manipulation
 git clone https://github.com/UBC-MDS/mds_array_manipulation.git
 ```
 
-2. You can install `mds_array_manipulation` package using `poetry`
+2. Change to the project root directory
 ```
-$ poetry install
+cd mds_array_manipulation
+```
+
+3. You can install `mds_array_manipulation` package using `poetry`
+```
+poetry install
 ```
 If you dont have poetry installed in your base environment, you can follow the [installation guide](https://python-poetry.org/docs/#installation) for poetry.
 
