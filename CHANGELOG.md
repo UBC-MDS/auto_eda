@@ -2,6 +2,25 @@
 
 
 
+## v0.0.9 (2024-02-03)
+
+### Fix
+
+* fix: Feedback addressed by updating command in Readme ([`b2d8846`](https://github.com/UBC-MDS/mds_array_manipulation/commit/b2d884669c5ea355233412dfac5cb1b0dcf4f4ec))
+
+### Unknown
+
+* Merge pull request #96 from UBC-MDS/updating_command_readme
+
+fix: Feedback addressed by updating command in Readme ([`ad9547c`](https://github.com/UBC-MDS/mds_array_manipulation/commit/ad9547cc5ddbdc8fa00a9ceb3f99de30f7f3e49e))
+
+* Merge pull request #95 from UBC-MDS/93-add-documentationcomments-on-test-suite
+
+Fix: Feedback addressed by adding comments to conftest ([`391392f`](https://github.com/UBC-MDS/mds_array_manipulation/commit/391392fe51139873d2bfe0448a6f352755fe64d5))
+
+* Fix: Feedback addressed by adding comments to conftest ([`5114c3b`](https://github.com/UBC-MDS/mds_array_manipulation/commit/5114c3be7db60db6b3f2d7872d349f58a37bb84f))
+
+
 ## v0.0.8 (2024-02-03)
 
 ### Fix
