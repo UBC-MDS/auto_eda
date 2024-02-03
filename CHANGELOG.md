@@ -2,6 +2,49 @@
 
 
 
+## v0.0.8 (2024-02-03)
+
+### Fix
+
+* fix: License part on README.md ([`7e94afe`](https://github.com/UBC-MDS/mds_array_manipulation/commit/7e94afe0afd1e7a6079223b50b8466ced04cf8e6))
+
+### Unknown
+
+* Merge pull request #91 from UBC-MDS/66-review-license-file
+
+feat: Adjusted LICENSE (Added CC-by-SA-4.0) ([`a16ed8a`](https://github.com/UBC-MDS/mds_array_manipulation/commit/a16ed8a9a6c5b31b3c0612bd26c6938faa7f2250))
+
+* Merge pull request #92 from UBC-MDS/readme_update
+
+fix: Adjusted License part on README.md ([`c19b0f9`](https://github.com/UBC-MDS/mds_array_manipulation/commit/c19b0f9ad8638c592fb93f8bf21b74a46ca38d81))
+
+* feat : Adjusted LICENSE (Added CC-by-SA-4.0) ([`01ae79c`](https://github.com/UBC-MDS/mds_array_manipulation/commit/01ae79c89335e071923f98b409bc555bd9911243))
+
+* Adjusted License details on README.md ([`2b17ad4`](https://github.com/UBC-MDS/mds_array_manipulation/commit/2b17ad489ed5f27478c9d9646a441a11bd26d362))
+
+* Merge pull request #89 from UBC-MDS/66-review-license-file
+
+66 review license file
+
+As we discussed and concluded that we use MIT for software and for others we use CC-by-SA-4.0. Hence we added CC-by-SA-4.0 into LICENSE and adjust some minor wording to integrate it with MIT License.
+
+Also we added the badge of CC-by-SA-4.0 on README.md ([`c0717d9`](https://github.com/UBC-MDS/mds_array_manipulation/commit/c0717d9233761a3bb78c856598c8d88dd51933d9))
+
+* Merge branch &#39;main&#39; into 66-review-license-file ([`c8bf3ce`](https://github.com/UBC-MDS/mds_array_manipulation/commit/c8bf3cedecb4a9e66bf24e8558576e56889e6662))
+
+* Added CC-by-SA-4.0 badge ([`b6d898e`](https://github.com/UBC-MDS/mds_array_manipulation/commit/b6d898edcd653db65408de5aeef194475b488d50))
+
+* Added CC-by-SA-4.0 License and integrating adjusted to MIT License ([`51d841a`](https://github.com/UBC-MDS/mds_array_manipulation/commit/51d841a735040501ca260b89325c0c3afe56bfde))
+
+* Merge pull request #88 from UBC-MDS/77-add-links-to-example-usage-in-readme
+
+Fix : Feedback addressed by adding links, citation information and clarification on package intent to README ([`441a0c6`](https://github.com/UBC-MDS/mds_array_manipulation/commit/441a0c6e895a317f7570f0023bd5bb3ef1b44a38))
+
+* Update README.md ([`5525b24`](https://github.com/UBC-MDS/mds_array_manipulation/commit/5525b24796c0aa4b3b78bfdc16720fca69ba6e4c))
+
+* Updates to README ([`05b1fbd`](https://github.com/UBC-MDS/mds_array_manipulation/commit/05b1fbd0fc8af1da806afd75d56b796d7f656009))
+
+
 ## v0.0.7 (2024-02-02)
 
 ### Fix
