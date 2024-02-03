@@ -2,6 +2,92 @@
 
 
 
+## v0.0.7 (2024-02-02)
+
+### Fix
+
+* fix: Feedback addressed by changing the return type for count_nonzero_elements ([`c2a7b89`](https://github.com/UBC-MDS/mds_array_manipulation/commit/c2a7b897521d2b851041a20080afecabe207b8a4))
+
+### Unknown
+
+* Merge pull request #87 from UBC-MDS/79-count_nonzero_elements-return-type-inconsistent
+
+fix: Feedback addressed by changing the return type for count_nonzero… ([`9677e6a`](https://github.com/UBC-MDS/mds_array_manipulation/commit/9677e6a56b7a805601c3a9d35be4d65a15647450))
+
+* fix:Feedback addressed by changing the return type for count function ([`ed6b402`](https://github.com/UBC-MDS/mds_array_manipulation/commit/ed6b4027cfccf5db8d87d42d6bba5d124eb8bd3e))
+
+
+## v0.0.6 (2024-02-02)
+
+### Fix
+
+* fix: Feedback addressed by adding type hints for function definitions. ([`6b66a0a`](https://github.com/UBC-MDS/mds_array_manipulation/commit/6b66a0acf606f7c2390c503da1f49b8cd678ce65))
+
+### Unknown
+
+* Merge pull request #86 from UBC-MDS/78-add-type-hint-to-inputoutput
+
+fix: Feedback addressed by adding type hints for function definitions. ([`3b218f5`](https://github.com/UBC-MDS/mds_array_manipulation/commit/3b218f559b5fbcd297dedc28074f181aaa4b34f1))
+
+
+## v0.0.5 (2024-02-02)
+
+### Fix
+
+* fix: Feedback addressed by updating badges ([`810cd89`](https://github.com/UBC-MDS/mds_array_manipulation/commit/810cd89bec7642693652cac7282f32d3fec6f1a1))
+
+
+## v0.0.4 (2024-02-02)
+
+### Fix
+
+* fix: Feedback addressed by adding inline comments in count_nonzero_elements ([`aca33da`](https://github.com/UBC-MDS/mds_array_manipulation/commit/aca33da8c57307e91a2646b58e09727a99a4446d))
+
+* fix: Feedback addressed by updating search_array docstring ([`053a606`](https://github.com/UBC-MDS/mds_array_manipulation/commit/053a6064500e1c95f02b45c3c843f7eac6232753))
+
+* fix: Feedback addressed by updating sort_array docstring ([`f4c8999`](https://github.com/UBC-MDS/mds_array_manipulation/commit/f4c8999850510224a7e6ec94d25b6798b19457df))
+
+* fix: Feedback addressed by updating table formatting in Vignette ([`3516818`](https://github.com/UBC-MDS/mds_array_manipulation/commit/3516818e308ac257869456081b621c1c767a2f24))
+
+### Unknown
+
+* Merge pull request #84 from UBC-MDS/75-fix-table-formatting-in-vignette
+
+fix: Feedback addressed by updating table formatting in Vignette ([`891f560`](https://github.com/UBC-MDS/mds_array_manipulation/commit/891f5605c7f8da0977f743825bb5baec1dd01b95))
+
+* Merge pull request #85 from UBC-MDS/function_docs
+
+Function docs ([`8a1bb23`](https://github.com/UBC-MDS/mds_array_manipulation/commit/8a1bb23ef3762f29b74d12a0e764446e3aae31b2))
+
+
+## v0.0.3 (2024-02-01)
+
+### Fix
+
+* fix: Feedback addressed by added badges and improved summary on README.md - 3 ([`7850950`](https://github.com/UBC-MDS/mds_array_manipulation/commit/785095056a072eb91ac182f08cb6fb4239cb57a5))
+
+### Unknown
+
+* Merge pull request #83 from UBC-MDS/72-add-badges-for-ci-python-package-version
+
+fix: Feedback addressed by added badges and improved summary on README.md - 3 ([`25a65d6`](https://github.com/UBC-MDS/mds_array_manipulation/commit/25a65d6ad480d58770c33aab1994acf0827e1bac))
+
+
+## v0.0.2 (2024-02-01)
+
+### Fix
+
+* fix: Feedback addressed by added badges and improved summary on README.md - 2 ([`b656739`](https://github.com/UBC-MDS/mds_array_manipulation/commit/b6567399876439860c3fdbd083c6b3121dfad5a2))
+
+### Unknown
+
+* Merge pull request #82 from UBC-MDS/72-add-badges-for-ci-python-package-version
+
+fix: Feedback addressed by added badges and improved summary on README.md - 2
+
+Correct the path on ci-cd badge. ([`bfa03e1`](https://github.com/UBC-MDS/mds_array_manipulation/commit/bfa03e15e4da1718688426ed688f70842cc41306))
+
+
 ## v0.0.1 (2024-01-31)
 
 ### Fix

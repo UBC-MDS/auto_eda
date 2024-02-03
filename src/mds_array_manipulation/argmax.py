@@ -1,19 +1,20 @@
+from typing import Union, Optional
 import numpy as np
 
-def argmax(arr, axis=None):
+def argmax(arr: np.ndarray, axis : Optional[int]= None) -> Union[int, np.ndarray]:
     """
-    Returns the indices of the maximum values along an axis from given array.
+    Returns the indices of the maximum values along an axis from the given array.
 
     Parameters
     ----------
-    arr : numpy.array
+    arr : numpy.ndarray
         Input array.
     axis : int, optional
         Axis along which to operate. By default, flattened input is used.
 
     Returns
     -------
-    indices : int or tuple of ints
+    indices : int or numpy.ndarray
         Indices of the maximum values along the specified axis.
 
     Raises
@@ -21,7 +22,7 @@ def argmax(arr, axis=None):
     TypeError
         If the input is not a numpy array.
     ValueError
-        If the input array is empty, or the axis specified is greater than the number of dimensions
+        If the input array is empty, or the axis specified is greater than the number of dimensions.
 
     Notes
     -----
@@ -32,7 +33,7 @@ def argmax(arr, axis=None):
     --------
     >>> import numpy as np
     >>> from mds_array_manipulation.mds_array_manipulation import argmax
-    >>> a = np.arange(6).reshape(2,3)
+    >>> a = np.arange(6).reshape(2, 3)
     >>> a
     array([[0, 1, 2],
            [3, 4, 5]])
@@ -53,11 +54,11 @@ def argmax(arr, axis=None):
     # Coding Part
     # Check numpy array, not empty numpy array, and not specified axis=1 when input array is 1D numpy array
     if not isinstance(arr, np.ndarray):
-	    raise TypeError("Input array is not a numpy array. Please enter only numpy array.")
-    if arr.size == 0: 
-	    raise ValueError("Input array is an empty array. Please do not enter an empty array.")
-    if (arr.ndim == 1) and (axis == 1): 
-	    raise ValueError("Cannot enter a 1D numpy array with axis = 1. Please enter again.")
+        raise TypeError("Input array is not a numpy array. Please enter only numpy array.")
+    if arr.size == 0:
+        raise ValueError("Input array is an empty array. Please do not enter an empty array.")
+    if (arr.ndim == 1) and (axis == 1):
+        raise ValueError("Cannot enter a 1D numpy array with axis = 1. Please enter again.")
 
     # Case of no axis is specified
     if axis is None:
@@ -90,4 +91,4 @@ def argmax(arr, axis=None):
                         max_indices[j] = i
         return max_indices
     else:
-	    raise ValueError("Error caused by axis specified other than 0 or 1.")
+        raise ValueError("Error caused by axis specified other than 0 or 1.")

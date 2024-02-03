@@ -1,8 +1,9 @@
 import numpy as np 
-
-def search_array(arr, elem):
+from typing import Union
+def search_array(arr : np.array, elem : Union[int, float, str]) -> int:
     """
-    Search for elem in a numpy array.
+    Search for elem in a numpy array. This function is 
+    specifically designed to work only with 1-dimensional arrays.
     
     Parameters
     ----------
@@ -21,7 +22,9 @@ def search_array(arr, elem):
     TypeError
         If the input is not a numpy array, or does not contain numeric or string values.
     ValueError
-        If the input array is not 1-dimensional.
+        If the input array is not 1-dimensional. This function does not 
+        support multi-dimensional arrays and will raise a ValueError 
+        if a multi-dimensional array is passed as input.
 
     Examples
     --------
