@@ -8,7 +8,9 @@
 ### Project Summary
 
 The package is intended to do basic array manipulations functions like Searching, Sorting, Counting non-zero elements, Finding indices of max value. 
-This is a package developed for the group-17 project for the UBC MDS DSCI 524 (Collaborative Software Development) course. Documentation can be found [here](https://mds-array-manipulation.readthedocs.io/en/latest/?badge=latest)
+This is a package developed for the group-17 project for the UBC MDS DSCI 524 (Collaborative Software Development) course. Documentation can be found [here](https://mds-array-manipulation.readthedocs.io/en/latest/?badge=latest).
+
+The package has been published on the pypi website and you can find it [here](https://pypi.org/project/mds-array-manipulation/).
 
 ### Functions Included in the Package
 
