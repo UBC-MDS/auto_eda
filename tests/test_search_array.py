@@ -3,13 +3,14 @@ import numpy as np
 
 from mds_array_manipulation.search_array import search_array
 
+# The following tests are for the function search_array
 
 #Test with 1D array
 def test_1d_search(one_d_int_array):
     ind = search_array(one_d_int_array, 3)
     assert ind == 2
     
-
+#Test with 1D array with multiple matching elements, to ensure it only returns the first match
 def test_1d_search_multiple_match(one_d_int_array):
     ind = search_array(one_d_int_array, 1)
     assert ind == 0

@@ -1,10 +1,15 @@
 import pytest
 import numpy as np
 
+'''
+This file contains fixtures for use in testing the core functions from the mds_array_manipulation package
+'''
+
 @pytest.fixture
 def empty_array():
     return np.array([])
 
+## 1D Numpy Arrays 
 @pytest.fixture
 def one_d_int_array():
     return np.array([1,5,3,9,18,24,0,1])
@@ -29,6 +34,7 @@ def one_d_int_array_sorted():
 def one_d_float_array():
     return np.array([1.0,5.1,3.14,9.62,18.88,24.01,0.0,1.5])
 
+#For use in testing values close to 0 in count_nonzero_elements
 @pytest.fixture
 def one_d_float_tol_array():
     return np.array([0.0, 1e-14,1e-15,1e-16])
@@ -45,6 +51,7 @@ def one_d_string_array():
 def one_d_string_array_mixed_case():
     return np.array(['Dog', 'cat', 'Banana', 'apple', 'Frog'])
 
+#2D and 3D arrays
 @pytest.fixture
 def two_d_int_array():
     return np.array([[1,5,3,9,18,24,0,1], [10,1,0,25,-1,-200,4,33]])
@@ -63,6 +70,7 @@ def two_d_string_array():
 def three_d_int_array():
     return np.array([[[1,5,3,9],[18,24,0,1]], [[10,1,0,25],[-1,-200,4,33]]])
 
+#List
 @pytest.fixture
 def none_numpy_array():
     return [1,5,18,24,0,1]

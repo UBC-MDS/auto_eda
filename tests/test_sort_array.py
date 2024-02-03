@@ -2,13 +2,14 @@ import pytest
 import numpy as np
 from mds_array_manipulation.sort_array import sort_array
 
-# The following test is for the function sort_array
+# The following tests are for the function sort_array
 
 # checks if a ValueError is raised for non-1D arrays
 def test_input_not_1d_array_1(two_d_int_array):
     with pytest.raises(ValueError):
         sort_array(two_d_int_array)
 
+#Tests if the function raises an error if the input array is greater than 1D
 def test_input_not_1d_array_2(three_d_int_array):
     with pytest.raises(ValueError):
         sort_array(three_d_int_array)

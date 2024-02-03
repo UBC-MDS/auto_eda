@@ -45,10 +45,6 @@ $ poetry install
 ```
 If you dont have poetry installed in your base environment, you can follow the [installation guide](https://python-poetry.org/docs/#installation) for poetry.
 
-3. To get the coverage report, run the following code:
-```
-poetry run pytest tests/ --cov=src/mds_array_manipulation/
-```
 
 ## Features
 
@@ -79,6 +75,20 @@ Example usage:
     array([10, 20, 30, 40, 50, 60, 90])
 >>> count_nonzero_elements(arr)
     7
+```
+
+### Running Unit Tests
+
+Execute the following in the project root directory after the package has been installed:
+
+```
+poetry run pytest
+```
+
+To get the coverage report, run the following code:
+
+```
+poetry run pytest tests/ --cov=src/mds_array_manipulation/
 ```
 
 ## Contributing

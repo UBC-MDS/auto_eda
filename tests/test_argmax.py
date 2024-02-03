@@ -2,6 +2,7 @@ import pytest
 import numpy as np
 from mds_array_manipulation.argmax import argmax
 
+# The following tests are for the function argmax
 
 # Test case for a valid 1D integer array
 def test_argmax_1d_int_array(one_d_int_array):
