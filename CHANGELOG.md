@@ -2,6 +2,19 @@
 
 
 
+## v0.0.10 (2024-02-03)
+
+### Fix
+
+* fix: Feedback addressed by adding pypi link ([`91cdf4d`](https://github.com/UBC-MDS/mds_array_manipulation/commit/91cdf4d940f267e931e1b7435fca8ff1eb4b81b0))
+
+### Unknown
+
+* Merge pull request #97 from UBC-MDS/adding_pypi_link
+
+fix: Feedback addressed by adding pypi link ([`f4048b9`](https://github.com/UBC-MDS/mds_array_manipulation/commit/f4048b9ab9112f0208edd0d9e427ce57f6d7221d))
+
+
 ## v0.0.9 (2024-02-03)
 
 ### Fix
