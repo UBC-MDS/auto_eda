@@ -2,6 +2,8 @@ import pytest
 import numpy as np
 from mds_array_manipulation.count_nonzero_elements import count_nonzero_elements
 
+# The following tests are for the function count_nonzero_elements
+
 #Test for 1D array
 def test_1d_array(one_d_int_array):
     result = count_nonzero_elements(one_d_int_array)
