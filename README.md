@@ -79,7 +79,8 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 
 ## License
 
-`mds_array_manipulation` was created by Kittipong Wongwipasamitkun, Sean Mckay, Yan Zeng, Aishwarya Nadimpally. It is licensed under the terms of the MIT license.
+`mds_array_manipulation` was created by Kittipong Wongwipasamitkun, Sean Mckay, Yan Zeng, Aishwarya Nadimpally. It is licensed under the terms of the MIT license for software code part including 
+source code examples in the documentation and it is licensed under the terms of the Attribution-ShareAlike 4.0 International, for Parts Other than the Software Code (Package Documentation, Data, Text, and any Media). See [`LICENSE`](https://github.com/UBC-MDS/mds_array_manipulation/blob/main/LICENSE).
 
 ## Credits
 
